@@ -13,7 +13,7 @@ export default function PostId() {
   // fetch initial API
   useEffect(() => {
     if(id && post.loading === false) {
-      dispatch(fetchPost(id.toString()))
+      dispatch(fetchPost(id.toString())) // use AsyncThunk for API call
     }
   },[id, dispatch])
 

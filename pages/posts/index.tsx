@@ -11,7 +11,7 @@ export default function Posts() {
   // fetch initial API
   useEffect(() => {
     if(posts.posts.length === 0 && posts.loading === false) {
-      dispatch(fetchPosts())
+      dispatch(fetchPosts()) // use AsyncThunk for API call
     }
   },[posts, dispatch])
 
