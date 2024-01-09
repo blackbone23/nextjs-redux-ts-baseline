@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "start": "nodemon -e ts,tsx --exec \"next build && next start\"",
+    "start": "nodemon -e js,ts,tsx --exec \"next build && next start\"",
     "build": "next build",
     "start-server": "next start",
     "lint": "next lint"
