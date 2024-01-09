@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "start": "nodemon -e js,ts,tsx --exec \"next build && next start\"",
     "build": "next build",
-    "start": "next start",
+    "start-server": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
+    "axios": "^1.6.4",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
@@ -21,6 +23,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "nodemon": "^3.0.2",
     "typescript": "^5"
   }
 }
