@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
-import { setCookie, getCookie, hasCookie } from 'cookies-next'
+import { getCookie } from 'cookies-next'
 import { cookies } from 'next/headers'
  
 // This function can be marked `async` if using `await` inside
