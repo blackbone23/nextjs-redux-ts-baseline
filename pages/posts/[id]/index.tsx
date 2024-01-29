@@ -17,10 +17,17 @@ export default function PostId() {
     }
   },[id, dispatch])
 
+  useEffect(() => {
+    if(!post.loading && post.error) {
+      router.push('/posts/not-found/')
+    } 
+  },[post])
+
   return (
     <div>
       {post.loading && <div>Loading...</div>}
-      {!post.loading && post.error ? <div>{post.error}</div> : null}
+      {/* commented for custom error page redirection */}
+      {/* {!post.loading && post.error ? <div>{post.error}</div> : null} */}
       {!post.loading && post.error === '' && post.post.id !== 0 && (
         <>
           <h2>Post</h2>
